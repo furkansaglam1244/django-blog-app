@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="text-center"><!--jumbotron text-center-->
+<h3>PAKİSTAN BLOĞUNA HOŞGELDİNİZ </h3>
+<p>Bu blogta deneyimlerinizi yazıya dökerek insanlara yardımcı olabilirsiniz.</p>
+</div>
+<!--<div style="text-align:center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq0z7gNPTniKB3SX7r76bjwF0K4aBcXK8Wg&usqp=CAU"/></div>
+<p>
+{% if request.user.is_authenticated %}  Sistemde bir userımız varsa ve giriş yapmışsa burası true döner
+    Giriş Yapılmış, {{request.user.username}}
+
+{% else %}
+    Giriş Yapılmamış
+
+{% endif %}
+
+</p>-->
+<style>
+body {
+  background-image: url('https://images.freeimages.com/images/large-previews/fc5/sohesar-lake-deaosai-1387830.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<br><br>
+<a style = "float:right;" href="/articles/addarticle/" class="btn btn-danger">Makale Yazmak İster misiniz?</a></td>
+{% endblock body %}
